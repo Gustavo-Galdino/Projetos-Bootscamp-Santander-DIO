@@ -1,0 +1,227 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 6%;
+}
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    background: #122A57;
+    padding: 40px;
+    align-items: center;
+}
+
+.containerHeader__Titulo {
+    font-size: 36px;
+    margin-left: 6%;
+}
+
+.containerHeader a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.containerHeader__links {
+    margin-right: 6%;
+}
+.containerHeader__links a {
+    margin-left: 28px;
+    font-size: 18px;
+}
+
+.containerInicial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerInicial__chamada { 
+    margin-top: 160px;
+}
+
+.containerInicial h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #122A57;
+}
+
+.containerInicial p{
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.containerInicial button {
+    color: #fff;
+    font-size: 24px;
+    background-color: #122A57;
+    border: none;
+    border-radius: 18px;
+    padding: 8px 24px;
+    margin-top: 44px;
+}
+
+.containerQuemSomos {
+    display: flex;
+    align-items: center;
+}
+
+.containerQuemSomos h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #122A57;
+    border-left: 8px solid #122A57;
+}
+
+.containerQuemSomos p{
+    font-size: 18px;
+    margin-top: 42px;
+}
+
+.containerServicos {
+    background: #122A57;
+}
+
+.containerServicos h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.containerServicos__chamada {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Servicos__Pacotes, .Servicos__Hospedagens, .Servicos__Roteiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Servicos__Pacotes p, .Servicos__Hospedagens p, .Servicos__Roteiros p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Servicos__Pacotes button, .Servicos__Hospedagens button, .Servicos__Roteiros button {
+    color: #122A57;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 24px;
+    border-style: none;
+    border-radius: 18px;
+}
+
+.containerPlanos h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.containerPlanos__chamada {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.containerPlanos__Planos {
+    border: 7px solid #122A57;
+    padding: 4%;
+}
+
+.containerPlanos__Planos h3 {
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 4px solid #122A57;
+    margin-bottom: 30px;
+}
+
+.containerPlanos__Planos ul li {
+    list-style: disc;
+    margin-bottom: 6px;
+}
+
+.containerPlanos__Planos button {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    background: #122A57;
+    border-style: none;
+    border-radius: 24px;
+    padding: 2px 24px;
+    margin-top: 50px;
+}
+
+.containerFooter {
+    background: #001741;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerFooter span{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+    .containerHeader{
+       display: block;
+    }
+
+    .containerHeader__links {
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .containerInicial {
+        display: block;
+        text-align: center;
+    }
+
+    .containerInicial__img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .containerQuemSomos {
+        display: block;
+    }
+
+    .containerQuemSomos__img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .containerServicos__chamada {
+        display: block;
+    }
+
+    .Servicos__Pacotes, .Servicos__Hospedagens, .Servicos__Roteiros {
+        margin-bottom: 100px;
+    }
+
+    .containerPlanos__chamada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerPlanos__Planos {
+        margin-bottom: 20px;
+    }
+
+    .containerFooter{
+        display: block;
+        text-align: center;
+        line-height: 30px;
+    }
+}
